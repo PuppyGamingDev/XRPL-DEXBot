@@ -1,8 +1,6 @@
 const { SlashCommandBuilder, EmbedBuilder, Colors } = require('discord.js');
-const mongoConnect = require('../mongo-connect.js')
-const { getxumm, getXRPClient, getToken, getTokensAutocomplete } = require('../Utilities.js')
+const { getxumm } = require('../Utilities.js')
 const xrpl = require('xrpl')
-require('dotenv/config')
 
 
 module.exports = {
