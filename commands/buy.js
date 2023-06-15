@@ -14,7 +14,7 @@ module.exports = {
     async autocomplete(interaction) {
         const focusedOption = interaction.options.getFocused(true);
         if (focusedOption.name === "currency") {
-            let choices = [{ name: "None", hex: "None" }];
+            let choices = [{ name: "None", code: "None" }];
             var tokens = getTokensAutocomplete();
             if (tokens || tokens !== undefined) choices = [...choices, ...tokens];
 
